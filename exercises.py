@@ -48,7 +48,6 @@ class Game ():
                 move = input(f"Enter a valid move (example: A1): ").lower()
             self.board[move] = self.turn
 
-
     def check_winner(self):
         if(self.board['a1'] and (self.board['a1'] == self.board['b1'] == self.board['c1'])):
             self.winner = self.turn
